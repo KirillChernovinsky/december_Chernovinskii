@@ -1,0 +1,453 @@
+
+*{
+    margin: 0;
+
+
+}
+
+li {
+
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/*body {*/
+/*    background-image: url('путь_к_картинке.jpg');*/
+/*    background-repeat: no-repeat; !* не повторять фон *!*/
+/*    background-size: cover; !* подогнать размер фона под размер окна *!*/
+/*}*/
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+.header_centering {
+    display: flex;
+    height: 100%;
+    width: 98%;
+}
+
+
+
+
+.company__name {
+    color: white;
+}
+
+.header_logo_wrapper {
+    height: 100%;
+    width: 7%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.header_logo_wrapper img {
+    width: 90%;
+    height: 90%;
+
+}
+
+
+.Elprimo {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social_networks_wrapper {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 8%;
+    height: 100%;
+
+}
+
+
+.social_network {
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 30%;
+
+    height: 100%;
+}
+
+
+.menu__item {
+    padding-left: 30px;
+
+
+}
+
+.menu__link{
+    text-decoration: none;
+
+}
+
+.contact__list {
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 80%;
+    height: 100%;
+
+}
+
+.contact__item {
+    padding-left: 100px;
+    width: 40%;
+}
+
+.contact__link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.calendar_item {
+    padding-left: 30px;
+    width: 30%;
+
+}
+
+.calendar{
+    text-decoration: none;
+}
+.schedule {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.Phone {
+    padding-left: 30px;
+    width: 20%;
+}
+
+.number {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.tex{
+    color: white;
+}
+
+.Phone_number {
+
+    width: 10%;
+
+}
+
+.number_zakaz{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.main-conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-conteiner_ {
+    width: 90%;
+    display: flex;
+
+}
+
+
+.catalog-wrapper {
+    padding-bottom: 2%;
+    width: 100%;
+    background-color: lightgray;
+}
+
+
+.search-form {
+    height: 30px;
+    width: 30%;
+    background-color: lightblue;
+}
+
+
+.catolog-list {
+    margin-top: 20px;
+}
+
+.catalog-item {
+    margin-top: 15px;
+}
+
+.items_in_catalog {
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+.area-tovarov {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: gray;
+    margin: 0 auto;
+
+}
+
+
+.area-tovarov-wrapper {
+    display: flex;
+    width: 95%;
+    background-color: lavender;
+}
+
+
+.tovar-img-wrapper {
+
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+
+.tovar-img-wrapper1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.tavor_img {
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+.tovar-description-wrapper {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+
+footer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+}
+
+
+.footer_centering {
+    display: flex;
+    height: 100%;
+    width: 98%;
+}
+
+
+.footer_logo_wrapper {
+    height: 100%;
+    width: 5.5%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+
+
+.footer_logo_wrapper img {
+    width: 90%;
+    height: 90%;
+
+}
+
+
+.social_networks_wrapper_footer {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 8%;
+    height: 100%;
+
+}
+
+
+.social_network_footer {
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 30%;
+
+    height: 100%;
+}
+
+
+.menu__item {
+    padding-left: 30px;
+
+
+}
+
+.menu__link{
+    text-decoration: none;
+}
+
+
+
+
+.contact__list_footer {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 60%;
+
+    height: 100%;
+}
+
+.contact__item_footer {
+    padding-left: 100px;
+    width: 40%;
+}
+
+.contact__link_footer {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.calendar_item_footer {
+    padding-left: 30px;
+    width: 30%;
+
+}
+
+.calendar_footer{
+    text-decoration: none;
+}
+.schedule_footer {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.Phone_footer {
+    padding-left: 30px;
+    width: 20%;
+}
+
+.number_footer {
+    text-decoration: none;
+}
+
+.Phone_number_footer {
+    width: 20%;
+
+}
+
+.number_zakaz_footer{
+    text-decoration: none;
+
+}
+
+

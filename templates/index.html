@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <meta charset="UTF-8">
+    <title>ЭлектроМания</title>
+</head>
+<body>
+<header>
+    <div class="header_centering">
+
+        <div class="header_logo_wrapper">
+            <img src="{{ url_for('static', path='/images/logo.jpg') }}" alt="logo">
+        </div>
+        <div class="Elprimo">
+            <h1 class="company__name">ЭлектроМания</h1>
+        </div>
+
+
+        <ul class="social_networks_wrapper">
+            <li class="social_network">
+                <a href="#">
+                    <img class='google' src="{{ url_for('static', path='/images/google.svg') }}" alt="google">
+                </a>
+            </li>
+            <li class="social_network">
+                <a href="#">
+                    <img class='instagram' src="{{ url_for('static', path='/images/instagram.svg') }}" alt="instagram">
+                </a>
+            </li>
+            <li class="social_network">
+                <a href="#">
+                    <img class='invision.svg' src="{{ url_for('static', path='/images/invision.svg') }}" alt="invision">
+                </a>
+            </li>
+        </ul>
+
+
+        <ul class="contact__list">
+            <li class="contact__item">
+                <a class="contact__link" href="#">Елабуга, Окружное шоссе 37А</a>
+            </li>
+
+            <li class="calendar_item">
+                <a class="schedule" href="#">круглосуточно</a>
+            </li>
+            </li>
+
+            <li class="Phone">
+                <p class="tex">тех.поддержка</p>
+                <a class="number" href="#">+7 902 342 52 22</a>
+            </li>
+            </li>
+            <li class="Phone_number">
+                <a class="number_zakaz" href="/auth/register">Вход/Регистрация</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+
+
+
+
+
+    <div class="main-conteiner">
+        <div class="main-conteiner_">
+
+            <div class="catalog-wrapper">
+                <div class="search">
+                    <input class="search-form" type="text" placeholder="Поиск...">
+                </div>
+                <div class="catalog-wrapper">
+                    <ul class="catolog-list">
+                        <li class="catalog-item">
+                            <a class="items_in_catalog" href="/"> Все категории </a>
+                        </li>
+                        <li class="catalog-item">
+                            <a class="items_in_catalog" href="/smartfons"> Смартфоны </a>
+                        </li>
+                        <li class="catalog-item">
+                            <a class="items_in_catalog" href="/notebooks"> Ноутбуки </a>
+                        </li>
+                        <li class="catalog-item">
+                            <a class="items_in_catalog" href="/PK"> ПК </a>
+                        </li>
+                        <li class="catalog-item">
+                            <a class="items_in_catalog" href="/accessories"> Акксессуары </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    {% for i in x %}
+    <div class="area-tovarov">
+        <div class="area-tovarov-wrapper">
+            <div class="tovar-img-wrapper">
+                <div class="tovar-img-wrapper1">
+                    <img class="tavor_img" src="{{i.img }}">
+                </div>
+            </div>
+            <div>
+                Номер товара: {{ i.id }}
+                <br>
+                Категория :{{ i.type }}
+                <br>
+                Название модели: {{ i.name }}
+                <br>
+                Производитель: {{ i.maker }}
+                <br>
+                В наличии: {{ i.availability }}
+                <br>
+
+
+            </div>
+            <div class="tovar-description-wrapper">
+                {{ i.description }}
+                <br>
+                <br>
+                Характеристики: {{ i.characteristic }}
+            </div>
+
+
+        </div>
+    </div>
+    {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer_centering">
+
+
+
+        <ul class="social_networks_wrapper_footer">
+            <li class="social_network_footer_footer">
+                <a href="#">
+                    <img class='google' src="{{ url_for('static', path='/images/google.svg') }}" alt="google">
+                </a>
+            </li>
+            <li class="social_network_footer">
+                <a href="#">
+                    <img class='instagram' src="{{ url_for('static', path='/images/instagram.svg') }}" alt="instagram">
+                </a>
+            </li>
+            <li class="social_network_footer">
+                <a href="#">
+                    <img class='invision.svg' src="{{ url_for('static', path='/images/invision.svg') }}" alt="invision">
+                </a>
+            </li>
+        </ul>
+
+
+        <ul class="contact__list_footer">
+            <li class="contact__item_footer">
+                <a class="contact__link_footer" href="#">Елабуга, Окружное шоссе 37А</a>
+            </li>
+
+            <li class="calendar_item_footer">
+                <a class="schedule_footer" href="#">О нас</a>
+            </li>
+
+        </ul>
+
+
+        <div class="Elprimo">
+            <h1>ЭлектроМания</h1>
+        </div>
+        <div class="footer_logo_wrapper">
+            <img src="{{ url_for('static', path='/images/logo.jpg') }}" alt="logo">
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
